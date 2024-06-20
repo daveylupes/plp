@@ -8,6 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #fafafa;
 }
 
 /* Navigation styles */
@@ -21,10 +22,11 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ddd;
 }
 
 /* Header styling */
@@ -43,8 +45,10 @@ header {
 /* Introduction section */
 .intro-section {
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 40px 20px;
     margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .intro-container {
@@ -55,8 +59,10 @@ header {
 /* Skills section */
 .skills-section {
     background-color: #e0e0e0;
-    padding: 20px;
+    padding: 40px 20px;
     margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .skills-container {
@@ -73,6 +79,49 @@ header {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Experience section */
+.experience-section {
+    background-color: #d0d0d0;
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-list li {
+    border: 1px solid #bbb;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Freelance section */
+.freelance-section {
+    background-color: #c0c0c0;
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.freelance-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Contact section */
@@ -80,6 +129,7 @@ footer {
     background-color: #333;
     padding: 20px;
     color: white;
+    text-align: center;
 }
 
 .contact-container {
@@ -99,10 +149,11 @@ footer {
 .contact-list li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .contact-list li a:hover {
-    text-decoration: underline;
+    color: #ddd;
 }
 
 /* Responsive design */
@@ -110,6 +161,8 @@ footer {
     .header-container,
     .intro-container,
     .skills-container,
+    .experience-container,
+    .freelance-container,
     .contact-container {
         padding: 10px;
     }
